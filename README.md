@@ -1,7 +1,3 @@
-Here’s an updated `README.md` file with the environment configuration settings for the **Gemini API key** and **Firebase required keys**, along with a section for adding the built app source:
-
----
-
 # 🧠 Zylofite - Your Personal AI Assistant 🤖
 
 Zylofite is a personal AI assistant app built using **Flutter** 🚀 and powered by **Gemini AI** for intelligent conversation 💬 and image analysis 📸. The app provides a private and secure user experience by storing chat data locally 🔒 while using **Firebase** 🔥 for authentication and managing user details.
@@ -13,13 +9,17 @@ Zylofite is a personal AI assistant app built using **Flutter** 🚀 and powered
 - **🔒 Private Chats**: All user chats are stored locally, ensuring privacy and security.
 - **🔑 Firebase Authentication**: Secure login and registration using Firebase authentication.
 - **🗂️ User Data Storage**: User details are securely stored in Firebase for easy access and management.
+- **🔐 Account Management**:
+  - **Login Page**: Allows existing users to log into their accounts securely.
+  - **Registration Page**: New users can sign up by providing their details, which are stored in Firebase.
+  - **Password Recovery**: Users can reset their password through Firebase’s secure password recovery options.
 
 ## 🛠️ Tech Stack
 
 - **Flutter**: Frontend development framework. ![Flutter](https://img.shields.io/badge/Flutter-blue?logo=flutter&logoColor=white)
 - **Gemini AI**: For conversational AI and image analysis.
 - **Firebase**:
-  - Authentication: For secure user login and registration. ![Firebase](https://img.shields.io/badge/Firebase-yellow?logo=firebase&logoColor=white)
+  - Authentication: For secure user login, registration, and password recovery. ![Firebase](https://img.shields.io/badge/Firebase-yellow?logo=firebase&logoColor=white)
   - Firestore: For storing and managing user data.
 - **Local Storage**: Ensuring that chats are private and stored locally on the user's device.
 
@@ -64,10 +64,15 @@ Zylofite is a personal AI assistant app built using **Flutter** 🚀 and powered
    - **Android**: Add your Firebase `google-services.json` in the `/android/app` directory.
    - **iOS**: Add your Firebase `GoogleService-Info.plist` in the `/ios/Runner` directory.
 3. Enable Firebase Authentication and Firestore in your Firebase project.
+4. In **Firebase Authentication**, enable **Email/Password** for secure login, registration, and password recovery.
 
 ## 🧑‍💻 Usage
 
-- **🔐 Login/Sign Up**: New users can register using Firebase Authentication, and existing users can log in securely.
+- **🔐 Login/Sign Up**: 
+  - New users can register using Firebase Authentication on the **Registration Page**.
+  - Existing users can log in securely using the **Login Page**.
+- **🔄 Password Recovery**: 
+  - If users forget their password, they can use the **Password Recovery** feature to reset it via Firebase's email recovery system.
 - **💬 Start a Chat**: Once logged in, users can start a conversation with Zylofite and access AI-driven responses.
 - **📸 Image Analysis**: Users can upload an image, and Zylofite will analyze and provide insights.
 - **🔒 Data Privacy**: All conversations are saved locally, ensuring user data privacy.
@@ -76,8 +81,8 @@ Zylofite is a personal AI assistant app built using **Flutter** 🚀 and powered
 
 You can download and try the built version of Zylofite from the following sources:
 
-- **APK for Android**: [Download APK](https://link-to-apk)
-- **iOS Build**: [Download iOS Build](https://link-to-ios-build)
+- **APK for Android**: [Download APK](https://www.mediafire.com/file/4pq4qu5f70qruh0/Zyfolite.apk/file)
+
 
 ## 🤝 Contributing
 
@@ -95,4 +100,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-This version includes the `.env` configuration for both Gemini API and Firebase keys and also provides a section to add download links for your built app. Let me know if you'd like to adjust any part of this!
+This version includes sections for **Login**, **Registration**, and **Password Recovery**, as well as how to integrate these using Firebase. Let me know if you need any more updates!
