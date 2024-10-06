@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627003520960",
+    "project_id": "jarvis-86bf4",
+    "storage_bucket": "jarvis-86bf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627003520960:android:9ad0478055e71efb743a25",
+        "android_client_info": {
+          "package_name": "com.example.friday"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGf902qER5tUEvCnp5OdUsWMGBwI6zUtI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

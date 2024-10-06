@@ -1,0 +1,28 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+ // Update this to the latest stable version available
+    repositories {
+        google()  // Google's Maven repository
+        mavenCentral()  // Maven Central repository
+    }
+    dependencies {
+             classpath 'com.google.gms:google-services:4.4.1' 
+    }
+}
+
+allprojects {
+    repositories {
+        google()  // Google's Maven repository
+        mavenCentral()  // Maven Central repository
+    }
+}
+
+rootProject.buildDir = '../build'  // Specifies the build directory for the root project
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"  // Specifies the build directory for each subproject
+    project.evaluationDependsOn(':app')  // Ensures that the app project is evaluated before the subprojects
+}
+
+tasks.register("clean", Delete) {  // Custom clean task to delete the build directory
+    delete rootProject.buildDir
+}
