@@ -9,10 +9,10 @@ import 'package:friday/pages/home_page.dart';
 void main() async {
  WidgetsFlutterBinding.ensureInitialized();
  await Firebase.initializeApp(options: FirebaseOptions(
-    apiKey: 'AIzaSyBGf902qER5tUEvCnp5OdUsWMGBwI6zUtI',
-    appId: '1:627003520960:android:9ad0478055e71efb743a25',
-    messagingSenderId: '627003520960',
-    projectId: 'jarvis-86bf4'));
+    apiKey: 'apiKey',
+    appId: 'appId',
+    messagingSenderId: 'messagingSenderId',
+    projectId: 'projectId'));
  Gemini.init(apiKey: GEMINI_API_KEY);
  runApp(const MyApp());
 }
